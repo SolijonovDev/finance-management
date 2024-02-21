@@ -1,8 +1,11 @@
 import { configureStore } from '@reduxjs/toolkit';
-import appConfigReducer from './reducers/appConfigReducer';
+import incomeReducer from './reducers/incomeReducer';
+import expenseReducer from './reducers/expenseReducer';
 
 export const store = configureStore({
   reducer: {
-    appConfig: appConfigReducer,
+    income: incomeReducer,
+    expense: expenseReducer,
   },
+  middleware: (getDefaultMiddleware) => getDefaultMiddleware(),
 });

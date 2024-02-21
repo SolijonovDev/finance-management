@@ -1,0 +1,20 @@
+{
+  "data": [
+    {
+      "id": "6toXW7tLnUMbbteFisxrd",
+      "created_at": 1707113226000,
+      "text": "Зарплата",
+      "date": 1707113226000,
+      "price": 500000,
+      "tag": "income"
+    },
+    {
+      "id": "6toXW7tLnUMbbteFisfadf",
+      "created_at": 1708336807556,
+      "text": "Подработка",
+      "date": 1707977348000,
+      "price": 100000,
+      "tag": "income"
+    }
+  ]
+}

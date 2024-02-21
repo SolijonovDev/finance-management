@@ -8,3 +8,20 @@ body{
   font-size: 14px;
   font-weight: 400;
 }
+
+ul,li{
+  list-style-type: none;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+button{
+  cursor: pointer;
+}
+
+.datePicker{
+  width: 100%;
+}

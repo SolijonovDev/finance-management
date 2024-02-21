@@ -1,0 +1,36 @@
+{
+  "data": [
+    {
+      "id": "zX4VM1yMjWUVnfC1KqoOI",
+      "created_at": 1707718265000,
+      "category": "Подписка",
+      "date": 1707718265000,
+      "price": 62626,
+      "tag": "expense"
+    },
+    {
+      "id": "6toXW7tLnUMbbteFisxrd",
+      "created_at": 1707545503000,
+      "category": "Еда",
+      "date": 1707545503000,
+      "price": 7000,
+      "tag": "expense"
+    },
+    {
+      "id": "6toXW7tLnUMbbteFisxadf",
+      "created_at": 1707545570000,
+      "category": "Обучение",
+      "date": 1707545570000,
+      "price": 7000,
+      "tag": "expense"
+    },
+    {
+      "id": "6toXW7tLnUMbbteFisgaf",
+      "created_at": 1708236737000,
+      "category": "Такси",
+      "date": 1708236737000,
+      "price": 9000,
+      "tag": "expense"
+    }
+  ]
+}

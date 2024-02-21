@@ -1,0 +1,27 @@
+.label{
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 6px;
+  display: block;
+}
+
+.errorText{
+  color:red;
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 12px;
+}
+
+.input{
+  outline: none;
+  color: #000;
+  
+  &.error{
+    color:red;
+    border:1px solid red;
+  }
+
+  &.error::placeholder{
+    color:red;
+  }
+}

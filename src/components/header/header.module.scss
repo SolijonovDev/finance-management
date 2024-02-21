@@ -1,5 +1,7 @@
+@import '../../styles/variables.scss';
+
 .header{
-  background-color: #eff3f6;
+  background-color: $color-3;
   padding: 12px 0;
 
   @media (min-width:600px) {
@@ -15,7 +17,7 @@
   .logo{
     font-size: 20px;
     font-weight: 700;
-    color:#202020;
+    color:$color-4;
 
     @media (min-width:600px) {
       font-size: 26px;
@@ -37,7 +39,7 @@
 
   .menuItemLink{
     font-size: 16px;
-    color: rgba(#202020, 0.5);    
+    color: rgba($color-4, 0.5);    
     font-weight: 600;
 
     @media (min-width:500px) {
@@ -45,7 +47,7 @@
     }
 
     &.active{
-      color: rgba(#202020, 1); 
+      color: $color-4; 
     }
   }
 }

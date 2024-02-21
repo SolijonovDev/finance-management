@@ -7,7 +7,7 @@ import { BaseModal } from '../../components/baseModal/BaseModal';
 import { CustomInput } from '../../components/Form/CustomInput';
 import { SubmitButton } from '../../components/btns/SubmitButton';
 
-import styles from './addNewCategoryModal.module.scss';
+import styles from './modal.module.scss';
 
 const schema = yup.object().shape({
   text: yup.string().required('Это поля обязательное'),

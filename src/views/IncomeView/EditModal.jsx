@@ -2,15 +2,15 @@ import { useForm, Controller } from 'react-hook-form';
 import { useDispatch, useSelector } from 'react-redux';
 import * as yup from 'yup';
 import { yupResolver } from '@hookform/resolvers/yup';
+import DatePicker from 'react-datepicker';
+import { useState } from 'react';
+import moment from 'moment';
 import { changeIncome } from '../../redux-store/reducers/incomeReducer';
 import { BaseModal } from '../../components/baseModal/BaseModal';
 import { SubmitButton } from '../../components/btns/SubmitButton';
 import { CustomInput } from '../../components/Form/CustomInput';
-import DatePicker from 'react-datepicker';
 
-import styles from './modalContent.module.scss';
-import { useState } from 'react';
-import moment from 'moment';
+import styles from './modal.module.scss';
 
 const schema = yup.object().shape({
   text: yup.string().required('Это поля обязательное'),

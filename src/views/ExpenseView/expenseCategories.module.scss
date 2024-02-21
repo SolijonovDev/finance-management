@@ -1,3 +1,5 @@
+@import '../../styles/variables.scss';
+
 .expenseCategories{
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -24,7 +26,7 @@
     text-align: center;
     font-size: 12px;
     font-weight: 500;
-    background-color: rgba(#005bff, 0.25);
+    background-color: rgba($color-5, 0.25);
     border: none;
     outline: none;
     border-radius: 4px;

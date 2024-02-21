@@ -12,10 +12,7 @@ export const IncomeView = () => {
   const { incomes } = useSelector((state) => state.income);
   const dispatch = useDispatch();
 
-  const handleDelete = (id) => {
-    dispatch(deleteIncome(id));
-  };
-
+  const handleDelete = (id) => dispatch(deleteIncome(id));
   const handleCloseEditModal = () => setCurrentIncomeId('');
   const handleOpenEditModal = (id) => setCurrentIncomeId(id);
 

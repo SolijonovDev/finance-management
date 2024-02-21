@@ -9,7 +9,8 @@ import { CustomInput } from '../../components/Form/CustomInput';
 import * as yup from 'yup';
 import { yupResolver } from '@hookform/resolvers/yup';
 import moment from 'moment';
-import styles from './editModal.module.scss';
+
+import styles from './modal.module.scss';
 
 const schema = yup.object().shape({
   price: yup.number().required('Это поля обязательное').typeError('Сумма должна быть число'),
@@ -51,7 +52,7 @@ export const EditModal = ({ onClose, id }) => {
   return (
     <BaseModal title="Изменить" onClose={onClose}>
       <form onSubmit={handleSubmit(submit)} className={styles.form}>
-        <h4 className={styles.category}>Категория: {income.category}</h4>
+        <h4>Категория: {income.category}</h4>
         <CustomInput
           label="Сумма"
           register={register}

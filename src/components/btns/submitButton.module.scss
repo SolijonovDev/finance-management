@@ -1,12 +1,15 @@
+@import '../../styles/variables.scss';
+
 .btn{
-  color:#fff;
+  color:$color-1;
   width: 100%;
   padding: 15px;
   text-align: center;
   font-size: 18px;
   font-weight: 500;
-  background-color: rgba(#005bff, 0.5);
+  background-color: rgba($color-5, 0.5);
   border: none;
   outline: none;
   border-radius: 8px;
+  margin-top: 25px;
 }

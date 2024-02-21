@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import { ModalContent } from './ModalContent';
 import { Portal } from '../../components/portal/Portal';
+import { AddNewIncomeModal } from './AddNewIncomeModal';
 
 import styles from './addNewIncome.module.scss';
 
@@ -16,7 +16,7 @@ export const AddNewIcome = () => {
       </button>
       <Portal
         showModal={showModal}
-        content={<ModalContent onClose={() => setShowModal(false)} />}
+        content={<AddNewIncomeModal onClose={() => setShowModal(false)} />}
       />
     </div>
   );

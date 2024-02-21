@@ -1,32 +1,32 @@
 @import '../../styles/variables.scss';
 
-.label{
+.label {
   font-size: 16px;
   font-weight: 500;
   margin-bottom: 6px;
   display: block;
 }
 
-.errorText{
+.errorText {
   color: $color-6;
   font-size: 14px;
   font-weight: 400;
   margin-bottom: 12px;
 }
 
-.input{
+.input {
   outline: none;
   color: $color-2;
   width: 100%;
-  padding:10px;
+  padding: 10px;
   margin-bottom: 12px;
-  
-  &.error{
-    color:$color-6;
-    border:1px solid $color-6;
+
+  &.error {
+    color: $color-6;
+    border: 1px solid $color-6;
   }
 
-  &.error::placeholder{
-    color:$color-6;
+  &.error::placeholder {
+    color: $color-6;
   }
 }

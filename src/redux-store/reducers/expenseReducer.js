@@ -24,12 +24,12 @@ const { reducer, actions } = createSlice({
       state.expenses.unshift(newExpense);
     },
     deleteExpense(state, action) {
-      state.expenses = state.expenses.filter((expense) => expense.id !== action.payload);
+      state.expenses = state.expenses.filter(expense => expense.id !== action.payload);
     },
     changeExpense(state, action) {
       const { id, price, date } = action.payload;
 
-      state.expenses = state.expenses.map((expense) =>
+      state.expenses = state.expenses.map(expense =>
         expense.id === id ? { ...expense, price, date } : expense,
       );
     },
@@ -37,9 +37,9 @@ const { reducer, actions } = createSlice({
       state.categories.push(action.payload);
     },
   },
-  extraReducers: (builder) => {
+  extraReducers: builder => {
     builder
-      .addCase(fetchExpensesData.pending, (state) => {
+      .addCase(fetchExpensesData.pending, state => {
         state.status = 'loading';
       })
       .addCase(fetchExpensesData.fulfilled, (state, action) => {

@@ -9,12 +9,12 @@ import { Portal } from '../../components/portal/Portal';
 
 export const IncomeView = () => {
   const [currentIncomeId, setCurrentIncomeId] = useState('');
-  const { incomes } = useSelector((state) => state.income);
+  const { incomes } = useSelector(state => state.income);
   const dispatch = useDispatch();
 
-  const handleDelete = (id) => dispatch(deleteIncome(id));
+  const handleDelete = id => dispatch(deleteIncome(id));
   const handleCloseEditModal = () => setCurrentIncomeId('');
-  const handleOpenEditModal = (id) => setCurrentIncomeId(id);
+  const handleOpenEditModal = id => setCurrentIncomeId(id);
 
   return (
     <Container>

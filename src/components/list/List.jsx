@@ -6,7 +6,7 @@ export const List = ({ items, handleEdit, handleDelete, hideBtns = false }) => {
   return (
     <ul>
       {items &&
-        items.map((item) => {
+        items.map(item => {
           return (
             <li key={item.id} className={styles.item}>
               <div className={styles.info}>

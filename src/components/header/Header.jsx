@@ -18,7 +18,8 @@ export const Header = () => {
               to="/income"
               className={({ isActive }) =>
                 classNames({ [styles.active]: isActive, [styles.menuItemLink]: true })
-              }>
+              }
+            >
               Доходы
             </NavLink>
           </li>
@@ -27,7 +28,8 @@ export const Header = () => {
               to="/expense"
               className={({ isActive }) =>
                 classNames({ [styles.active]: isActive, [styles.menuItemLink]: true })
-              }>
+              }
+            >
               Расходы
             </NavLink>
           </li>

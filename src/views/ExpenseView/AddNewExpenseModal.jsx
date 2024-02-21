@@ -28,7 +28,7 @@ export const AddNewExpenseModal = ({ onClose, category }) => {
     formState: { errors },
   } = useForm({ resolver: yupResolver(schema) });
 
-  const submit = (data) => {
+  const submit = data => {
     const milliseconds = new Date(moment(data.date)).getTime();
 
     dispatch(addNewExpense({ price: data.price, date: milliseconds, category }));
@@ -36,7 +36,7 @@ export const AddNewExpenseModal = ({ onClose, category }) => {
     onClose();
   };
 
-  const handleChange = (dateChange) => {
+  const handleChange = dateChange => {
     setValue('date', dateChange, {
       shouldDirty: true,
     });

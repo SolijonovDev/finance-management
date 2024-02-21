@@ -1,6 +1,6 @@
 @import '../../styles/variables.scss';
 
-.item{
+.item {
   margin-bottom: 10px;
   display: flex;
   align-items: flex-start;
@@ -10,39 +10,39 @@
   border-radius: 4px;
   position: relative;
 
-  @media (min-width:600px) {
+  @media (min-width: 600px) {
     margin-bottom: 15px;
     padding: 10px;
   }
 
-  @media (min-width:600px) {
+  @media (min-width: 600px) {
     margin-bottom: 20px;
     padding: 10px;
   }
 
-  &:last-child{
+  &:last-child {
     margin-bottom: 0;
   }
 
-  h2{
+  h2 {
     margin-bottom: 15px;
     font-size: 16px;
 
-    @media (min-width:600px) {
+    @media (min-width: 600px) {
       font-size: 20px;
       margin-bottom: 35px;
     }
   }
 
-  .created_at{
+  .created_at {
     position: absolute;
     bottom: 10px;
     right: 10px;
   }
 }
 
-.btns{
-  button{
+.btns {
+  button {
     padding: 4px 6px;
     font-size: 12px;
     font-weight: 300;
@@ -51,18 +51,18 @@
     outline: none;
     border-radius: 4px;
 
-    @media (min-width:600px) {
+    @media (min-width: 600px) {
       padding: 8px 12px;
       font-size: 14px;
     }
   }
 
-  .delete{
+  .delete {
     margin-left: 8px;
     background-color: $color-6;
     color: $color-1;
 
-    @media (min-width:600px) {
+    @media (min-width: 600px) {
       margin-left: 15px;
     }
   }

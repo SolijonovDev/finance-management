@@ -9,16 +9,16 @@ import { useState } from 'react';
 
 export const ExpenseView = () => {
   const [showModal, setShowModal] = useState(false);
-  const { expenses } = useSelector((state) => state.expense);
+  const { expenses } = useSelector(state => state.expense);
   const dispatch = useDispatch();
   const [currentExpenseId, setCurrentExpenseId] = useState('');
 
-  const handleEdit = (id) => {
+  const handleEdit = id => {
     setShowModal(true);
     setCurrentExpenseId(id);
   };
 
-  const handleDelete = (id) => {
+  const handleDelete = id => {
     dispatch(deleteExpense(id));
     setCurrentExpenseId(id);
   };

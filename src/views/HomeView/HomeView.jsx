@@ -8,8 +8,8 @@ import { reduceAllSumms } from '../../helpers/reduceSum';
 import styles from './homeView.module.scss';
 
 export const HomeView = () => {
-  const { expenses } = useSelector((state) => state.expense);
-  const { incomes } = useSelector((state) => state.income);
+  const { expenses } = useSelector(state => state.expense);
+  const { incomes } = useSelector(state => state.income);
 
   const [exps, setExps] = useState(0);
   const [icms, setIcms] = useState(0);

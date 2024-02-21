@@ -22,7 +22,7 @@ export const AddNewCategoryModal = ({ onClose }) => {
     formState: { errors },
   } = useForm({ resolver: yupResolver(schema) });
 
-  const submit = (data) => {
+  const submit = data => {
     dispatch(addNewCategory(data.text));
     reset();
     onClose();

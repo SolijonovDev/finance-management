@@ -30,14 +30,14 @@ export const AddNewIncomeModal = ({ onClose }) => {
 
   const [date, setDate] = useState(new Date(Date.now()));
 
-  const submit = (data) => {
+  const submit = data => {
     const milliseconds = new Date(moment(data.date)).getTime();
     dispatch(addNewIncome({ ...data, date: milliseconds }));
     reset();
     onClose();
   };
 
-  const handleChange = (dateChange) => {
+  const handleChange = dateChange => {
     setValue('date', dateChange, {
       shouldDirty: true,
     });

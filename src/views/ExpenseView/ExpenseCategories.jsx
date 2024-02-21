@@ -9,19 +9,20 @@ import styles from './expenseCategories.module.scss';
 export const ExpenseCategories = () => {
   const [showCategoryModal, setCategoryShowModal] = useState(false);
   const [currentCategory, setCurrentCategory] = useState('');
-  const { categories } = useSelector((state) => state.expense);
+  const { categories } = useSelector(state => state.expense);
 
-  const handleChangeCurrentCategory = (category) => {
+  const handleChangeCurrentCategory = category => {
     setCurrentCategory(category);
   };
 
   return (
     <div className={styles.expenseCategories}>
-      {categories.map((category) => (
+      {categories.map(category => (
         <button
           className={styles.categoryItem}
           onClick={() => handleChangeCurrentCategory(category)}
-          key={category}>
+          key={category}
+        >
           {category}
         </button>
       ))}

@@ -19,7 +19,7 @@ const schema = yup.object().shape({
 
 export const EditModal = ({ onClose, id }) => {
   const dispatch = useDispatch();
-  const income = useSelector((state) => state.income.incomes.find((income) => income.id === id));
+  const income = useSelector(state => state.income.incomes.find(income => income.id === id));
   const [date, setDate] = useState(new Date(income.date));
   const {
     register,
@@ -36,14 +36,14 @@ export const EditModal = ({ onClose, id }) => {
     },
   });
 
-  const submit = (data) => {
+  const submit = data => {
     const milliseconds = new Date(moment(data.date)).getTime();
     dispatch(changeIncome({ ...data, date: milliseconds, id }));
     reset();
     onClose();
   };
 
-  const handleChange = (dateChange) => {
+  const handleChange = dateChange => {
     setValue('date', dateChange, {
       shouldDirty: true,
     });

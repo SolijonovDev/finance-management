@@ -22,19 +22,19 @@ const { reducer, actions } = createSlice({
       state.incomes.unshift(newIncome);
     },
     deleteIncome(state, action) {
-      state.incomes = state.incomes.filter((income) => income.id !== action.payload);
+      state.incomes = state.incomes.filter(income => income.id !== action.payload);
     },
     changeIncome(state, action) {
       const { id, text, price, date } = action.payload;
 
-      state.incomes = state.incomes.map((income) =>
+      state.incomes = state.incomes.map(income =>
         income.id === id ? { ...income, text, price, date } : income,
       );
     },
   },
-  extraReducers: (builder) => {
+  extraReducers: builder => {
     builder
-      .addCase(fetchIncomesData.pending, (state) => {
+      .addCase(fetchIncomesData.pending, state => {
         state.status = 'loading';
       })
       .addCase(fetchIncomesData.fulfilled, (state, action) => {

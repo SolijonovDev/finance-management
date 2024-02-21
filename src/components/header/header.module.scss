@@ -1,53 +1,53 @@
 @import '../../styles/variables.scss';
 
-.header{
+.header {
   background-color: $color-3;
   padding: 12px 0;
 
-  @media (min-width:600px) {
+  @media (min-width: 600px) {
     padding: 20px 0;
   }
 
-  .container{
+  .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
 
-  .logo{
+  .logo {
     font-size: 20px;
     font-weight: 700;
-    color:$color-4;
+    color: $color-4;
 
-    @media (min-width:600px) {
+    @media (min-width: 600px) {
       font-size: 26px;
     }
   }
 
-  .menu{
+  .menu {
     display: flex;
     align-items: center;
   }
 
-  .menuItem{
+  .menuItem {
     margin-left: 12px;
 
-    @media (min-width:600px) {
+    @media (min-width: 600px) {
       margin-left: 40px;
     }
   }
 
-  .menuItemLink{
+  .menuItemLink {
     font-size: 16px;
-    color: rgba($color-4, 0.5);    
+    color: rgba($color-4, 0.5);
     font-weight: 600;
 
-    @media (min-width:500px) {
+    @media (min-width: 500px) {
       font-size: 18px;
     }
 
-    &.active{
-      color: $color-4; 
+    &.active {
+      color: $color-4;
     }
   }
 }

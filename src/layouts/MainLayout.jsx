@@ -9,8 +9,8 @@ import styles from './mainLayout.module.scss';
 export const MainLayout = ({ children }) => {
   const dispatch = useDispatch();
 
-  const { error: incomesError, status: incomesStatus } = useSelector((state) => state.income);
-  const { error: expensesError, status: expensesStatus } = useSelector((state) => state.expense);
+  const { error: incomesError, status: incomesStatus } = useSelector(state => state.income);
+  const { error: expensesError, status: expensesStatus } = useSelector(state => state.expense);
 
   useEffect(() => {
     dispatch(fetchIncomesData());

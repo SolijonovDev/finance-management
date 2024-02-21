@@ -7,5 +7,5 @@ export const store = configureStore({
     income: incomeReducer,
     expense: expenseReducer,
   },
-  middleware: (getDefaultMiddleware) => getDefaultMiddleware(),
+  middleware: getDefaultMiddleware => getDefaultMiddleware(),
 });

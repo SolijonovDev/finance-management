@@ -28,14 +28,14 @@ const options = {
 };
 
 export const ChartPanel = () => {
-  const { expenses } = useSelector((state) => state.expense);
-  const { incomes } = useSelector((state) => state.income);
+  const { expenses } = useSelector(state => state.expense);
+  const { incomes } = useSelector(state => state.income);
 
   const expensesExtraction = dataExtractor(expenses);
   const incomesExtraction = dataExtractor(incomes);
 
-  const expensesDates = expenses.map((item) => item.date);
-  const incomesDates = incomes.map((item) => item.date);
+  const expensesDates = expenses.map(item => item.date);
+  const incomesDates = incomes.map(item => item.date);
 
   const sortedDates = convertAndSortDates(expensesDates, incomesDates);
 

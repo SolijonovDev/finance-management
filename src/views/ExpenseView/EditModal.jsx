@@ -2,13 +2,13 @@ import { useForm, Controller } from 'react-hook-form';
 import { useDispatch, useSelector } from 'react-redux';
 import DatePicker from 'react-datepicker';
 import { useState } from 'react';
+import * as yup from 'yup';
+import { yupResolver } from '@hookform/resolvers/yup';
+import moment from 'moment';
 import { changeExpense } from '../../redux-store/reducers/expenseReducer';
 import { BaseModal } from '../../components/baseModal/BaseModal';
 import { SubmitButton } from '../../components/btns/SubmitButton';
 import { CustomInput } from '../../components/Form/CustomInput';
-import * as yup from 'yup';
-import { yupResolver } from '@hookform/resolvers/yup';
-import moment from 'moment';
 
 import styles from './modal.module.scss';
 

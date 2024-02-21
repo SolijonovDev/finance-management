@@ -5,6 +5,7 @@ import { yupResolver } from '@hookform/resolvers/yup';
 import 'react-datepicker/dist/react-datepicker.css';
 import DatePicker from 'react-datepicker';
 import { useState } from 'react';
+import moment from 'moment';
 import { addNewExpense } from '../../redux-store/reducers/expenseReducer';
 import { BaseModal } from '../../components/baseModal/BaseModal';
 import { SubmitButton } from '../../components/btns/SubmitButton';
@@ -15,7 +16,7 @@ import styles from './modal.module.scss';
 const schema = yup.object().shape({
   price: yup.number().required('Это поля обязательное').typeError('Сумма должна быть число'),
 });
-import moment from 'moment';
+
 export const AddNewExpenseModal = ({ onClose, category }) => {
   const dispatch = useDispatch();
   const [date, setDate] = useState(new Date(Date.now()));

@@ -1,11 +1,11 @@
-import { Container } from '../../components/container/Container';
+import { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
+import { Container } from '../../components/container/Container';
 import { List } from '../../components/list/List';
 import { ExpenseCategories } from './ExpenseCategories';
 import { deleteExpense } from '../../redux-store/reducers/expenseReducer';
 import { Portal } from '../../components/portal/Portal';
 import { EditModal } from './EditModal';
-import { useState } from 'react';
 
 export const ExpenseView = () => {
   const [showModal, setShowModal] = useState(false);
